@@ -1,13 +1,35 @@
 {
 	"rooms":[
 		{
-			"id":"parking","secretaria","lavabo","classe","descanso",
-			"name":"Parking de ENTI","secretaria de ENTI","baño de ENTI","classe de ENTI","Area de descanso de ENTI",
-			"description":"El Parking que no puedes usar","la secretaria lugar donde mucha gente donde va","baño donde se hace las necessecidades","El Infierno","El cielo temporal",
+			"id":"parking","descanso",
+			"name":"Parking de ENTI","Area de descanso de ENTI",
+			"description":"El Parking que no puedes usar","El cielo temporal",
 			"items":["piedra","bicicleta","boligrafo","extintor","pala","lapiz"], 
-			"doors":["principal", "salida","backrooms"]
+			"doors":["principal", "salida","backrooms"],
+			
+			"id":"secretaria",
+			"name":"secretaria de ENTI",
+			"description":"la secretaria lugar donde mucha gente va",
+			"items":["boligrafo","lapiz"],
+			"doors":["salida"],	
+			
+			"id":"lavabo",
+			"name":"baño de ENTI",
+			"description":"baño donde se hacen las necessecidades",
+			
+			"id":"classe",
+			"name":"classe de ENTI",
+			"description":"El Infierno",
+			"items":["extintor"],
+			"doors":["salida"],
+
+			"id":"descanso",
+			"name":"Area de descanso de ENTI",
+			"description":"El cielo temporal",
+			"doors":["vr"]
+
 		}
-	],
+],
 	"items": [
 		{"id":"piedra","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
 		{"id":"bicicleta","name":"Bicicleta mugrosa","description":"Algun alumno la abandono","pickable":false},
