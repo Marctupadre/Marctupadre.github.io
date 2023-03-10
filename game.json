@@ -8,12 +8,12 @@
 			"doors":["principal"]
 		},
 		{
-    			"id":"principal",
-    			"name":"Entrada al edificio de ENTI",
-    			"description":"Ves una puerta de cristal rota, cerca una gran piedra hecha trozos",
-    			"items":["trozo_piedra"], 
-    			"doors":["parking", "hall"]
-    		},
+    		"id":"principal",
+    		"name":"Entrada al edificio de ENTI",
+    		"description":"Ves una puerta de cristal rota, cerca una gran piedra hecha trozos",
+			"items":["trozo_piedra"], 
+			"doors":["parking", "hall"]
+    	},
 		{
 			"id":"hall",
 			"name":"Sala Principal de ENTI",
@@ -80,6 +80,7 @@
 		{"id":"lapiz","name":"lapiz chino","description":"lapiz sacado de ohio","pickable":false}
 	],
 	"doors":[
+		{"id":"parking","description":"zona peligrosa","rooms":["principal","parking"]},
 		{"id":"principal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
 		{"id":"salida","description":"La Salvacion", "rooms":["descanso"]},
 		{"id":"backrooms","description":"Cagaste","rooms":["lavabo"]},

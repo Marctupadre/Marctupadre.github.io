@@ -68,7 +68,7 @@ function parseCommand (command)
 			for (let i = 0; i < items_num; i++){
 				items += game_data.rooms[current_room].items[i] + " ";
 			}
-			terminalOut("<p>Los items en la sala son: " + items + "</p>");
+			terminal_out("<p>Los items en la sala son: " + items + "</p>");
 			break;
 		default:
 			terminal_out("<p><strong>Error</strong>: " + command +  " commando no encontrado</p>");
@@ -101,7 +101,7 @@ function getDoorNumber (door)
 
 function getItemNumber (item) 
 {
-	let doors_num = game_data.items.length;
+	let items_num = game_data.items.length;
 
 	for (let i = 0; i < items_num; i++){
 		if (game_data.items[i].id == item) {
