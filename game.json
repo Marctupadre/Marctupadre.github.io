@@ -19,7 +19,7 @@
 			"name":"Sala Principal de ENTI",
 			"description":"Un aura oscura impregna el ambiente, un detector de metales yace estropeado en medio de la mal iluminada sala principal del edificio",
 			"items":["papel_manchado","linterna"],                                                                                                        	
-			"doors":["parking", "principal", "secretaria", "escalera_primer_piso"]			
+			"doors":["principal", "secretaria", "escalera_primer_piso"]			
 		},                                                                       		
 		{
 			"id":"secretaria",
@@ -33,14 +33,14 @@
 			"name":"Escaleras hacia el Primer Piso del Edificio",
 			"description":"Hay ... demasiados ... escalones ...",
 			"items":["moneda"],
-			"doors":["primer_piso"]
+			"doors":["primer_piso", "hall"]
 		},
 		{
 			"id":"primer_piso",
 			"name":"Primer Piso del Edificio",
 			"description":"Algo se ha movido! Se ha metido en una puerta...",
 			"items":["cutter"],
-			"doors":["lavabo", "clase", "descanso"]
+			"doors":["lavabo", "clase", "descanso", "escalera_primer_piso"]
 		},
 		{	
 			"id":"lavabo",
@@ -60,37 +60,41 @@
 			"id":"descanso",
 			"name":"Area de descanso",
 			"description":"Hay un agujero en medio de la sala, siento una llamada...",
-			"items":["USB"],
+			"items":["usb"],
 			"doors":["primer_piso","backrooms"]
 		},
 		{
 			"id":"backrooms",
 			"name":"El Infierno",
 			"description":"A A A",
-			"items":["Siligrama"],
+			"items":["siligrama"],
 			"doors":["parking"]
 		}
 	],
 	"items": [
+		{"id":"trozo_piedra","name":"Piedra destrozada", "description":"Parece haber sido rota hace poco","pickable":true},
 		{"id":"piedra","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
+		{"id":"papel_manchado","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
+		{"id":"linterna","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
 		{"id":"bicicleta","name":"Bicicleta mugrosa","description":"Algun alumno la abandono","pickable":false},
 		{"id":"boligrafo","name":"Boli dorado","description":"Boli forjado con examenes","pickable":true},
+		{"id":"moneda","name":"Moneda dorado","description":"Lapiz forjado con examenes","pickable":true},
+		{"id":"cutter","name":"Moneda dorado","description":"Lapiz forjado con examenes","pickable":true},
+		{"id":"papel_mojado","name":"Moneda dorado","description":"Lapiz forjado con examenes","pickable":true},
+		{"id":"amogus","name":"Extintor salvavidas","description":"Salva muchas vidas bro ns","pickable":false},
 		{"id":"extintor","name":"Extintor salvavidas","description":"Salva muchas vidas bro ns","pickable":false},
-		{"id":"pala","name":"pala no mugrosa","description":"pala sus","pickable":true},
+		{"id":"usb","name":"pala no mugrosa","description":"pala sus","pickable":true},
+		{"id":"siligrama","name":"lapiz chino","description":"lapiz sacado de ohio","pickable":false},
 		{"id":"lapiz","name":"lapiz chino","description":"lapiz sacado de ohio","pickable":false}
 	],
 	"doors":[
 		{"id":"principal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
 		{"id":"parking","description":"zona peligrosa","rooms":["principal","parking"]},
-		{"id":"descanso","description":"La Salvacion", "rooms":["descanso","hall"]},
-		{"id":"backrooms","description":"Cagaste","rooms":["descanso",""]},
-		{"id":"secrataria","description":"excusas","rooms":["secretaria","hall"]},
-		{"id":"hall","description":"sientes tu sins por tu espalda","rooms":["principal","hall"]},
-		{"id":"primera piso escalera","description":"estoy cansado","rooms":["primer_piso",""]},
-		{"id":"primer piso","description":"por fin","rooms":["descanso","classe"]},
-		{"id":"wc","description":"siiii","rooms":["lavabo","primer_piso"]}
-		
-
-	]
-}
-
+		{"id":"hall","description":"sientes tu sins por tu espalda","rooms":["principal","hall"],
+		{"id":"secretaria","description":"La Salvacion", "rooms":["hall","secretaria"]},
+		{"id":"escalera_primer_piso","description":"excusas","rooms":["escalera_primer_piso","hall"]},
+		{"id":"primer_piso","description":"excusas","rooms":["escalera_primer_piso","primer_piso"]},
+		{"id":"lavabo","description":"Cagaste","rooms":["primer_piso","lavabo"]},
+		{"id":"clase","description":"Cagaste","rooms":["primer_piso","clase"]},
+		{"id":"descanso","description":"Cagaste","rooms":["descanso","primer_piso"]}
+		{"id":"backrooms","description":"Cagaste","rooms":["descanso",""]}
