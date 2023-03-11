@@ -96,5 +96,5 @@
 		{"id":"primer_piso","description":"excusas","rooms":["escalera_primer_piso","primer_piso"]},
 		{"id":"lavabo","description":"Cagaste","rooms":["primer_piso","lavabo"]},
 		{"id":"clase","description":"Cagaste","rooms":["primer_piso","clase"]},
-		{"id":"descanso","description":"Cagaste","rooms":["descanso","primer_piso"]}
+		{"id":"descanso","description":"Cagaste","rooms":["descanso","primer_piso"]},
 		{"id":"backrooms","description":"Cagaste","rooms":["descanso",""]}
