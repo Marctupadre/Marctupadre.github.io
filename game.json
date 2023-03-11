@@ -85,7 +85,10 @@
 		{"id":"descanso","description":"La Salvacion", "rooms":["descanso","hall"]},
 		{"id":"backrooms","description":"Cagaste","rooms":["descanso",""]},
 		{"id":"secrataria","description":"excusas","rooms":["secretaria","hall"]},
-		{"id":"hall","description":"sientes tu sins por tu espalda","rooms":["principal","hall"]}
+		{"id":"hall","description":"sientes tu sins por tu espalda","rooms":["principal","hall"]},
+		{"id":"primera piso escalera","description":"estoy cansado","rooms":["primer_piso",""]},
+		{"id":"primer piso","description":"por fin","rooms":["descanso","classe"]},
+		{"id":"wc","description":"siiii","rooms":["lavabo","primer_piso"]}
 		
 
 	]
