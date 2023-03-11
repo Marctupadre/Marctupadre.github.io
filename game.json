@@ -73,7 +73,7 @@
 	],
 	"items": [
 		{"id":"trozo_piedra","name":"Piedra destrozada", "description":"Parece haber sido rota hace poco","pickable":true},
-		{"id":"piedra","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
+		{"id":"piedra","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":false},
 		{"id":"papel_manchado","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
 		{"id":"linterna","name":"Pedrusco mugroso", "description":"Es una piedra sucia","pickable":true},
 		{"id":"bicicleta","name":"Bicicleta mugrosa","description":"Algun alumno la abandono","pickable":false},
@@ -88,15 +88,15 @@
 		{"id":"lapiz","name":"lapiz chino","description":"lapiz sacado de ohio","pickable":false}
 	],
 	"doors":[
-        {"id":"principal","description":"Puerta de entrada a ENTI","rooms":["parking","hall"]},
-        {"id":"parking","description":"zona peligrosa","rooms":["principal","parking"]},
-        {"id":"hall","description":"sientes tu sins por tu espalda","rooms":["principal","hall"]},
-        {"id":"secretaria","description":"La Salvacion","rooms":["hall","secretaria"]},
-        {"id":"escalera_primer_piso","description":"excusas","rooms":["escalera_primer_piso","hall"]},
-        {"id":"primer_piso","description":"excusas","rooms":["escalera_primer_piso","primer_piso"]},
-        {"id":"lavabo","description":"Cagaste","rooms":["primer_piso","lavabo"]},
-        {"id":"clase","description":"Cagaste","rooms":["primer_piso","clase"]},
-        {"id":"descanso","description":"Cagaste","rooms":["descanso","primer_piso"]},
-        {"id":"backrooms","description":"Cagaste","rooms":["backrooms","parking"]}
-    ]
+		{"id":"principal","description":"Puerta de entrada a ENTI","rooms":["parking","principal"]},
+		{"id":"parking","description":"zona peligrosa","rooms":["principal","parking"]},
+		{"id":"hall","description":"sientes tu sins por tu espalda","rooms":["principal","hall"]},
+		{"id":"secretaria","description":"La Salvacion","rooms":["hall","secretaria"]},
+		{"id":"escalera_primer_piso","description":"excusas","rooms":["escalera_primer_piso","hall"]},
+		{"id":"primer_piso","description":"excusas","rooms":["escalera_primer_piso","primer_piso"]},
+		{"id":"lavabo","description":"Cagaste","rooms":["primer_piso","lavabo"]},
+		{"id":"clase","description":"Cagaste","rooms":["primer_piso","clase"]},
+		{"id":"descanso","description":"Cagaste","rooms":["descanso","primer_piso"]},
+		{"id":"backrooms","description":"Cagaste","rooms":["backrooms","parking"]}
+	]
 }
