@@ -89,12 +89,8 @@ function parseCommand (command)
 			terminal_out("<p>"+game_data.rooms[current_room].description + "</p>");
 			break;
 		case "ir":
-			let doors = "";
-			let doors_num = game_data.rooms[current_room].doors.length;
-			for (let i = 0; i < doors_num; i++){
-				doors += game_data.rooms[current_room].doors[i] + " ";
-			}
-			terminal_out("<p>Puedes ir a: " + doors + "</p>");
+			
+			terminal_out("<p>Escribe ir + 'nombre de habitación'</p>");
 			break;
 		case "coger":
 			let items = "";
@@ -161,7 +157,7 @@ function parseInstruction (instruction)
 			}
 
 			if (game_data.items[item_num].pickable == false) {
-				terminalOut("<p>El objeto<strong> " + item_pick + "</strong> no puede ser cogido</p>");
+				terminal_out("<p>El objeto<strong> " + item_pick + "</strong> no puede ser cogido</p>");
 				return;
 			}
 
@@ -213,7 +209,14 @@ function game (data)
 	game_data = data;
 	
 	terminal_out("<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo.</p>");
-	terminal_out("<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>");
+	terminal_out("<p>Te encuentras en "+data.rooms[current_room].name+". ¿Qué quieres hacer?</p>");
+	let doors = "";
+			let doors_num = game_data.rooms[current_room].doors.length;
+			for (let i = 0; i < doors_num; i++){
+				doors += game_data.rooms[current_room].doors[i] + " ";
+			}
+			terminal_out("<p>Puedes ir a: " + doors + "</p>");
+	
 }
 
 fetch("https://Marctupadre.github.io/game.json")
@@ -224,10 +227,10 @@ fetch("https://Marctupadre.github.io/game.json")
 </head>
 <body>
 
-<header>
+
 <h1>Marc Alimany, página de ENTI (M04UF1)</h1>
 <nav>
-<ul id="main-menu">
+<ul>
 <li id="menu-presentation"><a href="index.html">Presentación</a></li>
 <li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
 <li id="menu-contact"><a href="contact.html">Contacto</a></li>
@@ -235,7 +238,7 @@ fetch("https://Marctupadre.github.io/game.json")
 <li id="menu-game"><a href="game.html">Game</a></li>
 </ul>
 </nav>
-</header>
+
 
 <main>
 
@@ -251,7 +254,7 @@ fetch("https://Marctupadre.github.io/game.json")
 
 <aside>
 <h2>Lateral</h2>
-<p>Ejemplo de menú lateral</p>
+<p>Mirar el jason para las demas habitaciones porque no he conseguido limpiar la terminal de las aciones y no consigo que salga la siguiente habitacion pero puedes ir a cualquier habitacion</p>
 </aside>
 
 </main>

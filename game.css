@@ -3,3 +3,20 @@ border:2px solid black;
 min-width:240px;
 min-height:120px;
 }
+h1{
+color:#5dc1b9;
+text-shadow:2px 2px #000000;
+text-align:center;
+text-decoration:underline;
+}
+ul{
+border:20px inset #2d572c;
+background-color-size:#2d572c;
+}
+li{
+color:#00ff00;
+}
+a{
+color:white;
+text-decoration:none;
+}
