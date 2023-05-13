@@ -1,6 +1,4 @@
-# Marctupadre.github.io 
-
-# ENTIérrame Preguntas
+# Marctupadre.github.io ENTIrame preguntas
 
 ### ¿Qué es HTML?
 
