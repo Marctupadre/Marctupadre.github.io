@@ -25,7 +25,7 @@ ya sean doble asterisco para la negrita o una tilde para código, de esta manera
 Es un formato de archivo que se encarga estructurar los datos y hacer visiblemente mejor una web, 
 tambien es una alternativa para utilizar XML
 
-###¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
+### ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
 
 Para convertir un objeto a JSON  hay que poner en nuestra terminal JSON.stringify() al convertirlo no pedira una serie de informaciones como el nombre y demas cosas y luego se creara el archivo,
 esto convierte un objeto de JavaScript a una cadena de texto JSON,  y para pasarlo a objeto con un JSON.parse(), hacemos la conversión al revés, de una cadena de texto JSON a un objeto JavaScript.
