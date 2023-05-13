@@ -5,12 +5,12 @@
 El lenguaje Html es un lenguaje que se utiliza para estructurar paginas web y es como 
 el esqueleto de una pagina web las siglas de HTML significanHyeperText Markup Language
 
-###¿CSS? 
+### ¿CSS? 
 
 El Lenguaje CSS sirve para mejorar la apariencia de la web, es una hoja de estilos que utiliza 
 diferentes markdown y que cada uno de ellos tiene diferente finalidad 
 
-###¿JavaScript?
+### ¿JavaScript?
 
 Es un Lenguaje que se utiliza para la parte funcional de las webs para que asi la web sean mas interactivas 
 con el usuario y utiliza la etiqueta <script> </script> para escrivir que se hara en esa parte de la web
