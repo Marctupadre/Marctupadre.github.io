@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Marc Alimany, página de ENTI (M04UF1). Portada</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="game.css" />
+</head>
+<body>
+<h1>Marc Alimany Programador</h1>
+<nav>
+<ul>
+<li id="menu-presentation"><a href="presentation.html">Presentación</a></li>
+<li id="menu-hobbies"><a href="hobbies.html">Hobbies</a></li>
+<li id="menu-contact"><a href="contact.html">Contacto</a></li>
+<li id="menu-cv"><a href="cv.html">CV</a></li>
+<li id="menu-game"><a href="game.html">Game</a></li>
+</ul>
+</nav>
+<main>
+
+<article>
+<h2>Contactame</h2>
+
+<p>Choose your reason of contacting me:</p>
+<!--<form>
+<p><label for="e-mail"> e-mail:</label> <input type="text" name="email" id="contact-mail" /></p>
+	<input type="radio" id="job" name="reason" value="JOB">
+  	<label for="job">Job Offer</label><br>
+	<input type="radio" id="studies" name="reason" value="STUDIES">
+  	<label for="studies">Harvard Offer</label><br>
+	<label for="reason">Brief explanation:</label><br>
+	<input type="text" id="opinion" name="opinion" value="Escribe aqui....."><br>
+	<button type="button" onclick="ShowText()">Submit</button>
+</form>
+-->
+
+<div class="container">
+	<form>
+		<div class="field" tabindex="1">
+			<label for="e-mail">
+				<i class="far fa-user"></i>Your e-mail
+			</label>
+			<input type="text" name="email" id="contact-mail" placeholder="e.g. alimany@gmail.com" required>
+		</div>
+		<div class="field" tabindex="2">
+			<input type="radio" id="job" name="reason" value="JOB">
+  			<label for="job">Job Offer</label><br>
+			<input type="radio" id="studies" name="reason" value="STUDIES">
+  			<label for="studies">Harvard Offer</label><br>
+		</div>
+		<div class="field" tabindex="3">
+			<label for="reason">
+				<i class="far fa-edit"></i>Brief explanation:
+			</label>
+			<input type="text" id="opinion" name="opinion" placeholder="Escribe aqui..." required><br>
+		</div>
+		<button type="button" onclick="ShowText()">Submit</button>
+		<!--<button type="reset">Send Me Message</button>-->
+	</form>
+</div>
+
+</article>
+<script>
+function ShowText() {
+var email = document.getElementById("contact-mail").value;
+var opinion = document.getElementById("opinion").value;
+var reason = document.querySelector('input[name="reason"]:checked').value;
+var alerta = "Gracias por contactarme!: " + email + "!\n";
+alerta += "Tu motivo de contacto es: " + reason + "!\n";
+alerta += "Me has contactado porque: " + opinion + "!\n\n\n";
+alerta += "Esto es un ejercicio de clase, no se va a enviar" + "!\n"; 
+alert(alerta);
+}
+</script>
+</main>
+
+<footer>
+<p>Marc Alimany (c) <span id="footer-year">2022</span></p>
+<script>
+	document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+</script>
+</footer>
+</body>
+</html>

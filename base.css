@@ -1,11 +1,71 @@
+/*@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+
+$all: all .5s ease;
+$sai: 'Saira Semi Condensed', sans-serif;
+
+*{
+    @include tf($tf-fm: $sai);
+    @include other($ot-tsi: $all)
+}
+
 html{
 font-family: 'Ubuntu', sans-serif;
 }
+
 body{
 	background-color:#bcd2e0;
+	background: #dfdfdf
+    margin:0;padding:0;
 }
 h1,h2,h3,h4,h5,h6{
 font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.container{
+    @include bm(100%, 100%, $bm-pd: 0 16px, $bm-dp: $fl);
+    @include flex-center($rnw)
+}
+
+form{
+    @include bm(400px, $bm-dp: $fl);
+    @include flex-center($cw);
+        div, label, input{
+            @include bm(100%)
+        }
+}
+
+label, input{
+    @include bm($bm-pd: 8px)
+}
+
+label, [placeholder]{
+    @include tf(#555)
+}
+
+label i{
+    @include bm($bm-mg: 0 10px 0 0)
+}
+
+input\{
+    background: rgba(255,255,255,.5);
+    border: none;
+    @include other($ot-br: 4px, $ot-bs: $o-b);
+        &:focus{
+            background: rgba(255,255,255,1);
+            @include other($ot-bs: none)
+        }
+}
+
+button{
+    background: #2f4ad0;
+    @include bm($bm-pd: 8px 16px, $bm-mg: 16px 0 50px 0);
+    @include tf(#fff);
+    border: none;
+    @include other($ot-br: 4px, $ot-cr: pointer, $ot-bs: $o-b);
+        &:hover{
+            @include tf($tf-ls: 2px);
+            @include other($ot-bs: none)
+        }
 }
 
 
@@ -59,4 +119,84 @@ flex-basis:25%;
 	aside{
 		flex-basis:100%;
 	}
+}/*
+
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+
+$all: all .5s ease;
+$sai: 'Saira Semi Condensed', sans-serif;
+
+*{
+    @include tf($tf-fm: $sai);
+    @include other($ot-tsi: $all)
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    /*background-color:#bcd2e0;*/
+    background: #dfdfdf;
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+label, input{
+    margin-bottom: 16px;
+}
+
+label i{
+    margin-right: 8px;
+}
+
+input{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid #2196F3;
+}
+
+button{
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #2196F3;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #0d8bf2;
 }
