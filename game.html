@@ -7,7 +7,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
 
-<link rel="stylesheet" href="base.css" />
 <link rel="stylesheet" href="game.css" />
 
 <script>
@@ -89,7 +88,18 @@ function parseCommand (command)
 			terminal_out("<p>"+game_data.rooms[current_room].description + "</p>");
 			break;
 		case "ir":
-			
+			let doors = "";
+			let comma = ",";
+			let doors_num = game_data.rooms[current_room].doors.length;
+			for (let i = 0; i < doors_num; i++){
+				doors += game_data.rooms[current_room].doors[i] + " ";
+				if (i < doors_num - 1)
+					comma = ", ";
+				else 
+					comma = " ";
+				// WiP, doors with comma
+				terminal_out("<p>Puedes ir a: " + doors + comma + "</p>");
+			}
 			terminal_out("<p>Escribe ir + 'nombre de habitación'</p>");
 			break;
 		case "coger":
@@ -245,11 +255,13 @@ fetch("https://Marctupadre.github.io/game.json")
 <article>
 <h2>Juegaco</h2>
 
+<div class="container">
 <form>
 <div id="terminal"></div>
 <input type="text" name="commands" id="commands" />
 <input type="submit" id="try-action" onclick="tryAction(); return false;"/>
 </form>
+</div>
 </article>
 
 <aside>
@@ -259,11 +271,11 @@ fetch("https://Marctupadre.github.io/game.json")
 
 </main>
 
-<footer>
+<div id="footer">
 <p>Marc Alimany (c) <span id="footer-year">2022</span></p>
 <script>
 	document.getElementById("footer-year").innerHTML = new Date().getFullYear();
 </script>
-</footer>
+</div>
 </body>
 </html>

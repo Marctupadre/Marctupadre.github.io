@@ -119,9 +119,9 @@ flex-basis:25%;
 	aside{
 		flex-basis:100%;
 	}
-}/*
-
-@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
+}
+*/
+/*@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
 
 $all: all .5s ease;
 $sai: 'Saira Semi Condensed', sans-serif;
@@ -129,14 +129,127 @@ $sai: 'Saira Semi Condensed', sans-serif;
 *{
     @include tf($tf-fm: $sai);
     @include other($ot-tsi: $all)
+}*/
+
+/*
+html,body{
+margin:0;
+padding:0;
 }
 
-html{
-    font-family: 'Ubuntu', sans-serif;
+.error{
+color:red;
+}
+
+#titulo_juego{
+border-bottom:2px solid #00cc00;
+}
+
+#contact-main{
+padding:32px;
+}
+
+#contact-main h2{
+font-family:sans-serif;
+color:#ffffff;
+text-shadow: 2px 2px 2px #000000;
+-webkit-text-stroke: 1px #000000;
+}
+
+#contact-main form p{
+display:flex;
+padding:8px 4px 8px 4px;
+margin:0;
+}
+#contact-main form label{
+width:128px;
+}
+
+#contact-main form p:nth-child(odd){
+background-color:#A6E6CD;
+}
+
+#contact-main form p:nth-child(even){
+background-color:#BFEAD9;
+}
+
+
+
+
+#game-page header{
+background-color:red;
+}
+
+#character_list{
+display:flex;
+padding:0;
+margin:0;
+list-style:none;
+}
+
+#character_list button{
+padding:8px;
+border-radius:16px;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border:0;
+background-color:#ccc;
+}
+
+
+#character_list button:hover{
+background-color:#aaa;
+}
+
+#character_data{
+background-color:#ccc;
+min-height:400px;
+}
+#character_data ul{
+margin:0;
+}
+
+*/
+
+header{
+width:200px;
+padding:0 0 0 128px;
+background-image:url(logo.png);
+background-repeat:no-repeat;
+background-size:128px;
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+display:flex;
+}
+nav{
+display:block;
+}
+nav ul {
+    text-align: center;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: bold;
+}
+nav li {
+    width: 20%;
+    float: left;
+    position: relative;
+
+}
+nav li a {
+    display: block;
+    line-height: 10px;
+    text-decoration: none;
 }
 
 body{
-    /*background-color:#bcd2e0;*/
+    background-color:#bcd2e0;
     background: #dfdfdf;
     margin:0;
     padding:0;
@@ -146,11 +259,29 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+h1{
+color:#5dc1b9;
+text-shadow:2px 2px #000000;
+text-align:center;
+text-decoration:underline;
+}
+ul{
+border:20px inset #2d572c;
+background-color-size:#2d572c;
+}
+li{
+color:#00ff00;
+}
+a{
+color:white;
+text-decoration:none;
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 form{
@@ -164,7 +295,7 @@ form{
 }
 
 label, input{
-    margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 label i{
@@ -199,4 +330,12 @@ button{
 
 button:hover{
     background-color: #0d8bf2;
+}
+#footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+	border:1px solid black;
 }
