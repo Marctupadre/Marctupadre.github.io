@@ -1,216 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
-
-$all: all .5s ease;
-$sai: 'Saira Semi Condensed', sans-serif;
-
-*{
-    @include tf($tf-fm: $sai);
-    @include other($ot-tsi: $all)
-}
-
-html{
-font-family: 'Ubuntu', sans-serif;
-}
-
-body{
-	background-color:#bcd2e0;
-	background: #dfdfdf
-    margin:0;padding:0;
-}
-h1,h2,h3,h4,h5,h6{
-font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-.container{
-    @include bm(100%, 100%, $bm-pd: 0 16px, $bm-dp: $fl);
-    @include flex-center($rnw)
-}
-
-form{
-    @include bm(400px, $bm-dp: $fl);
-    @include flex-center($cw);
-        div, label, input{
-            @include bm(100%)
-        }
-}
-
-label, input{
-    @include bm($bm-pd: 8px)
-}
-
-label, [placeholder]{
-    @include tf(#555)
-}
-
-label i{
-    @include bm($bm-mg: 0 10px 0 0)
-}
-
-input\{
-    background: rgba(255,255,255,.5);
-    border: none;
-    @include other($ot-br: 4px, $ot-bs: $o-b);
-        &:focus{
-            background: rgba(255,255,255,1);
-            @include other($ot-bs: none)
-        }
-}
-
-button{
-    background: #2f4ad0;
-    @include bm($bm-pd: 8px 16px, $bm-mg: 16px 0 50px 0);
-    @include tf(#fff);
-    border: none;
-    @include other($ot-br: 4px, $ot-cr: pointer, $ot-bs: $o-b);
-        &:hover{
-            @include tf($tf-ls: 2px);
-            @include other($ot-bs: none)
-        }
-}
-
-
-header,h1,nav,main,article,aside,footer{
-padding:0;
-margin:0;
-border:1px solid black;
-}
-
-header{
-display:flex;
-}
-nav{
-display:block;
-}
-nav ul {
-    text-align: center;
-    list-style: none;
-    box-sizing: border-box;
-    outline: none;
-    font-weight: bold;
-}
-nav li {
-    width: 20%;
-    float: left;
-    position: relative;
-
-}
-nav li a {
-    display: block;
-    line-height: 10px;
-    text-decoration: none;
-}
-main{
-display:block;
-}
-article{
-flex-basis:75%;
-}
-aside{
-flex-basis:25%;
-}
-
-@media (max-width: 600px){
-	main{
-		flex-direction:column;
-	}
-	article{
-		flex-basis:100%;
-	}
-	aside{
-		flex-basis:100%;
-	}
-}
-*/
-/*@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap');
-
-$all: all .5s ease;
-$sai: 'Saira Semi Condensed', sans-serif;
-
-*{
-    @include tf($tf-fm: $sai);
-    @include other($ot-tsi: $all)
-}*/
-
-/*
-html,body{
-margin:0;
-padding:0;
-}
-
-.error{
-color:red;
-}
-
-#titulo_juego{
-border-bottom:2px solid #00cc00;
-}
-
-#contact-main{
-padding:32px;
-}
-
-#contact-main h2{
-font-family:sans-serif;
-color:#ffffff;
-text-shadow: 2px 2px 2px #000000;
--webkit-text-stroke: 1px #000000;
-}
-
-#contact-main form p{
-display:flex;
-padding:8px 4px 8px 4px;
-margin:0;
-}
-#contact-main form label{
-width:128px;
-}
-
-#contact-main form p:nth-child(odd){
-background-color:#A6E6CD;
-}
-
-#contact-main form p:nth-child(even){
-background-color:#BFEAD9;
-}
-
-
-
-
-#game-page header{
-background-color:red;
-}
-
-#character_list{
-display:flex;
-padding:0;
-margin:0;
-list-style:none;
-}
-
-#character_list button{
-padding:8px;
-border-radius:16px;
-border-bottom-left-radius:0;
-border-bottom-right-radius:0;
-border:0;
-background-color:#ccc;
-}
-
-
-#character_list button:hover{
-background-color:#aaa;
-}
-
-#character_data{
-background-color:#ccc;
-min-height:400px;
-}
-#character_data ul{
-margin:0;
-}
-
-*/
-
 header{
 width:200px;
 padding:0 0 0 128px;
@@ -237,7 +24,7 @@ nav ul {
     font-weight: bold;
 }
 nav li {
-    width: 20%;
+    width: 25%;
     float: left;
     position: relative;
 
@@ -255,7 +42,22 @@ body{
     padding:0;
 }
 
-h1,h2,h3,h4,h5,h6{
+
+.center {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width:20%;
+}
+
+h2 {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width:35%;
+}
+h1,h3,h4,h5,h6{
     font-family: 'Ubuntu Condensed', sans-serif;
 }
 
@@ -331,11 +133,25 @@ button{
 button:hover{
     background-color: #0d8bf2;
 }
+
 #footer{
-    display: table;
+	bottom:0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-
-	border:1px solid black;
+	border:3px solid green;
+}
+.column {
+  float: left;
+  height: 300px;
+  width: 33.33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.centerimage {
+	display: block;¡
+	width:20%;
 }
