@@ -53,8 +53,6 @@ body{
 h2 {
 	font-family: 'Ubuntu Condensed', sans-serif;
 	display: block;
-	margin-left:auto;
-	margin-right:auto;
 	width:35%;
 }
 h1,h3,h4,h5,h6{
@@ -136,6 +134,7 @@ button:hover{
 
 #footer{
 	bottom:0;
+	margin-top:15px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
